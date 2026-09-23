@@ -1,0 +1,19 @@
+version: 2
+
+sources:
+  - name: silver
+    catalog: olist_dw_project
+    schema: silver
+    tables:
+      - name: orders
+        description: "Cleaned order records with validated timestamps"
+      - name: order_items
+        description: "Order line items with price and freight (decimal)"
+      - name: order_payments
+        description: "Payment records per order, supports multiple payments per order"
+      - name: customers
+        description: "Customer records, one row per customer_id"
+      - name: products
+        description: "Product catalog with dimensions and category"
+      - name: sellers
+        description: "Seller records with location info"
