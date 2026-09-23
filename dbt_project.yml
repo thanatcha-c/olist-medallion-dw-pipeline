@@ -39,6 +39,5 @@ models:
   olist_analytics:
     staging:
       +materialized: view
-      +schema: staging
     marts:
-      +materialized: table
+      +materialized: view
