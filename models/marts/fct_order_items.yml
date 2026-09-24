@@ -45,7 +45,7 @@ models:
               arguments:
                 min_value: 0
                 inclusive: false
-      - name: sales
+      - name: sales_amount
         tests:
           - not_null
           - dbt_utils.accepted_range:
