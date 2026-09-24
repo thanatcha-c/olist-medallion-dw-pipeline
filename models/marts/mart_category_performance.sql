@@ -4,7 +4,7 @@ select
     sum(quantity) as total_units_sold,
     sum(sales_amount) as total_revenue,
     avg(price) as avg_unit_price
-from {{ ref("fct_orders_item")}} i
+from {{ ref("fct_order_items")}} i
 left join {{ref("dim_products")}} p
 on i.product_id = p.product_id
 left join {{ref("fct_orders")}} o
